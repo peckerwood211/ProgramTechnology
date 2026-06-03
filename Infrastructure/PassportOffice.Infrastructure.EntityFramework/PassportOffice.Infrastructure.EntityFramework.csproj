@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\PassportOffice.Domain\PassportOffice.Domain.csproj" />
+    <ProjectReference Include="..\..\Domain\PassportOffice.Domain.Repositories.Abstractions\PassportOffice.Domain.Repositories.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Domain\PassportOffice.ValueObjects\PassportOffice.ValueObjects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.17">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.17" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
